@@ -12,12 +12,13 @@ import es from "./es"
 import fr from "./fr"
 import ja from "./ja"
 import hi from "./hi"
+import zh from "./zh"
 
 const fallbackLocale = "en-US"
 
 const systemLocales = Localization.getLocales()
 
-const resources = {ar, en, ko, es, fr, ja, hi}
+const resources = {ar, en, ko, es, fr, ja, hi, zh}
 const supportedTags = Object.keys(resources)
 
 // Checks to see if the device locale matches any of the supported locales
@@ -49,7 +50,7 @@ export const initI18n = async () => {
   await i18n.init({
     resources,
     // lng: locale?.languageTag ?? fallbackLocale,
-    lng: "en", // TODO: setup a ci process for translating text
+    lng: "zh", // TODO: setup a ci process for translating text
     // This ensures we check the English language for missing keys
     fallbackLng: {
       default: ["en"],

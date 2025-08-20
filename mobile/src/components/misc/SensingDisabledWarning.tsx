@@ -26,7 +26,7 @@ const SensingDisabledWarning: React.FC = () => {
         onPress={() => {
           push("/settings/privacy")
         }}>
-        <Text style={styles.settingsButtonTextBlue}>Settings</Text>
+        <Text style={styles.settingsButtonTextBlue}>{translate("common:settings")}</Text>
       </TouchableOpacity>
     </View>
   )

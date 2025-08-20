@@ -2,6 +2,7 @@ import {useAppTheme} from "@/utils/useAppTheme"
 import React from "react"
 import {View, Text, Modal, TouchableOpacity, StyleSheet} from "react-native"
 import Icon from "react-native-vector-icons/MaterialCommunityIcons"
+import {translate} from "@/i18n"
 
 interface ButtonProps {
   text: string
@@ -24,7 +25,7 @@ const MessageModal: React.FC<MessageModalProps> = ({
   visible,
   title,
   message,
-  buttons = [{text: "Okay"}],
+  buttons = [{text: translate("common:ok")}],
   onDismiss,
   iconName,
   iconSize = 40,
@@ -51,7 +52,9 @@ const MessageModal: React.FC<MessageModalProps> = ({
         <TouchableOpacity
           style={[styles.modalButton, styles.singleButton, {backgroundColor: theme.colors.buttonPrimary}]}
           onPress={() => handleButtonPress(undefined)}>
-          <Text style={[styles.modalButtonText, {color: theme.colors.palette.neutral100}]}>OK</Text>
+          <Text style={[styles.modalButtonText, {color: theme.colors.palette.neutral100}]}>
+            {translate("common:ok")}
+          </Text>
         </TouchableOpacity>
       )
     } else if (buttons.length === 1) {
