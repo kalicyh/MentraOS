@@ -352,16 +352,6 @@ export default function LoginScreen() {
           <Animated.View style={{opacity, transform: [{translateY}]}}>
             <Text preset="heading" tx="login:title" style={themed($title)} />
             <Text preset="subheading" tx="login:subtitle" style={themed($subtitle)} />
-
-            {/* Skip Button */}
-            <TouchableOpacity
-              style={themed($skipButton)}
-              onPress={() => {
-                // 跳过登录，直接进入主应用
-                replace("/")
-              }}>
-              <Text style={themed($skipButtonText)} tx="login:skip" />
-            </TouchableOpacity>
           </Animated.View>
 
           <Animated.View style={[themed($content), {opacity, transform: [{translateY}]}]}>
@@ -781,24 +771,6 @@ const $termsText: ThemedStyle<TextStyle> = ({colors}) => ({
   color: colors.textDim,
   textAlign: "center",
   marginTop: 8,
-})
-
-const $skipButton: ThemedStyle<ViewStyle> = ({spacing}) => ({
-  alignSelf: "center",
-  marginTop: spacing.md,
-  paddingHorizontal: spacing.lg,
-  paddingVertical: spacing.sm,
-  borderRadius: 20,
-  borderWidth: 1,
-  borderColor: "rgba(255, 255, 255, 0.3)",
-  backgroundColor: "rgba(255, 255, 255, 0.1)",
-})
-
-const $skipButtonText: ThemedStyle<TextStyle> = ({colors}) => ({
-  fontSize: 14,
-  color: colors.text,
-  textAlign: "center",
-  fontWeight: "500",
 })
 
 const $forgotPasswordContainer: ThemedStyle<ViewStyle> = ({spacing}) => ({

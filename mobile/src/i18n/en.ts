@@ -256,7 +256,6 @@ const en = {
   login: {
     title: "MentraOS",
     subtitle: "The future of smart glasses starts here",
-    skip: "Skip",
     email: "Email",
     password: "Password",
     signIn: "Sign In",
@@ -279,7 +278,6 @@ const en = {
     useGoogleSignIn: "This email is associated with a Google account. Please use 'Continue with Google' to sign in.",
     useAppleSignIn: "This email is associated with an Apple account. Please use 'Continue with Apple' to sign in.",
     connectionError: "Connection Error",
-    skipConnection: "Skip Connection",
     invalidEmail: "Please enter a valid email address",
     forgotPasswordTitle: "Forgot Password",
     forgotPasswordSubtitle: "Enter your email address and we'll send you a link to reset your password.",
