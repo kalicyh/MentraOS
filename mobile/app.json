@@ -16,7 +16,7 @@
     "assetBundlePatterns": ["**/*"],
     "android": {
       "icon": "./assets/app-icons/ic_launcher.png",
-      "package": "com.mentra.mentra",
+      "package": "com.kalicyh.mentra",
       "versionCode": 40,
       "adaptiveIcon": {
         "foregroundImage": "./assets/app-icons/ic_launcher_foreground.png",
@@ -43,7 +43,7 @@
       "icon": "./assets/app-icons/ic_launcher.png",
       "supportsTablet": false,
       "requireFullScreen": true,
-      "bundleIdentifier": "com.mentra.mentra",
+      "bundleIdentifier": "com.kalicyh.mentra",
       "associatedDomains": ["applinks:apps.mentra.glass"],
       "infoPlist": {
         "NSCameraUsageDescription": "This app needs access to your camera to capture images.",

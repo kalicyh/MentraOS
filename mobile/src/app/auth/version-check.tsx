@@ -102,7 +102,7 @@ export default function VersionUpdateScreen() {
         url = "https://mentra.glass/os"
         console.log("Redirecting to App Store:", url)
       } else if (Platform.OS === "android") {
-        url = "https://play.google.com/store/apps/details?id=com.mentra.mentra"
+        url = "https://play.google.com/store/apps/details?id=com.kalicyh.mentra"
       }
       console.log("Redirecting to store:", url)
       Linking.openURL(url)
