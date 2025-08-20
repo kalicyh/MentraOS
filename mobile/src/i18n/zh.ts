@@ -246,6 +246,7 @@ const zh = {
   login: {
     title: "MentraOS",
     subtitle: "智能眼镜的未来从这里开始",
+    skip: "跳过",
     email: "邮箱",
     password: "密码",
     signIn: "登录",
@@ -268,6 +269,7 @@ const zh = {
     useGoogleSignIn: "此邮箱与Google账户关联。请使用'使用Google继续'登录。",
     useAppleSignIn: "此邮箱与Apple账户关联。请使用'使用Apple继续'登录。",
     connectionError: "连接错误",
+    skipConnection: "跳过连接",
     invalidEmail: "请输入有效的邮箱地址",
     forgotPasswordTitle: "忘记密码",
     forgotPasswordSubtitle: "输入您的邮箱地址，我们将发送重置密码的链接。",

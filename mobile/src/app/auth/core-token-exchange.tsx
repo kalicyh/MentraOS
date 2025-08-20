@@ -194,6 +194,18 @@ export default function CoreTokenExchange() {
           <Button onPress={handleTokenExchange} isDarkTheme={theme.isDark} disabled={isLoading} iconName="reload">
             {isLoading ? "Connecting..." : "Retry Connection"}
           </Button>
+
+          <Button
+            onPress={() => {
+              // 跳过连接，直接进入主应用
+              loadPendingRouteOrHome()
+            }}
+            isDarkTheme={theme.isDark}
+            disabled={isLoading}
+            iconName="skip-next"
+            style={styles.skipButton}>
+            {translate("login:skipConnection")}
+          </Button>
         </View>
       </View>
     </Screen>
@@ -280,6 +292,12 @@ const styles = StyleSheet.create({
   },
   resetButton: {
     marginBottom: 16,
+  },
+  skipButton: {
+    marginTop: 16,
+    backgroundColor: "transparent",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.3)",
   },
   // Removed hardcoded color styles - now using theme dynamic colors
 })
